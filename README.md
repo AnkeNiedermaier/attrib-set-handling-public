@@ -1,10 +1,10 @@
 # PythonPart AttribSetHandling
-With this PythonPart it is possible to work on the Allplan AttributesetTemplates directly in Excel. It offers different possibilities:
+Since several Allplan versions it is possible to group attributes individually and assign them more or less automatically to selected objects in using so called **AttributsetTemplates** which are part of the project settings. With this PythonPart it is possible to edit them directly in Excel. It offers different options:
 - **Creating** a new layer file from an external template
 - **Exporting** and **Editing** an existing layer file
 - **(Re)Import** of a layer file modified in Excel
 
-The functionalities are possible both for single or a number of AttribSets.
+This is possible both for single or a whole bunch of AttributSets.
 
 ## Installation
 The PythonPart **AttribSetHandling** can be installed directly from the Plugin Manager in ALLPLAN. 
