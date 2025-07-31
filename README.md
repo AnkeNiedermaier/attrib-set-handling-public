@@ -50,3 +50,43 @@ tips to work with the Excel tables:
 > - generally speaking it is not necessary to enter **IDs** and **UIDs**, they will be completed automatically
 > - only the attributes IFC Entity and IFC PredefinedType allow for the **entry of a value**
 
+## Workflow
+The PythonPart is executed directly in ALLPLAN from the **Library palette**. In general, all PythonParts can be stated either with a **double-click** on the entry or per **Drag and Drop**. This shows the corresponding Properties palette and executes the skript.\
+he pallett consists of the two main parts
+- **Export templates** for the export to Excel
+- **Create/extend templates** for completion and creation of the ALLPLAN templates
+
+which can be used independendly. Nevertheless, as a first step it is recommended to export an already existing Attributset in creating a new Excel file. This file can than be used as a **schema** for all following steps.
+
+### Read templates
+To export existing templates the button **Folder AttribSets/AttribSet File** opens the Windows Explorer to select the path of the corresponding files. Depending on the setting of the **Complete folder** parameter, either the selected file or the complete folder is read off.
+
+<img src = "./docs/choose_templates.png" width = 450/>
+
+Depending on the choice of **Excel table** either a **new file** will be created or an **existing one** completed with new templates during the export. The button **Select table** therefor either serves to enter a file name and path or select an already existing file.
+
+<img src = "./docs/choose_Excel.png" width = 450/>
+
+The export as such is executed with the button **XML templates -> read off**.
+
+### Edit templates
+Afterwards the created or completed Excel file can be copied and edited in following the instructions in the **Excel templates** section of the documentation.
+
+### Complete templates
+In preparation for the (re)creation of Attributsets the Excel file as the basis has to be completed with the necessary information about the UIDs and IDs of groups and attributes. To do so, the file is selected with the button **Choose table**. Once selected, all containing sheets will be displayed in the **Table sheet** Pull-down. The completion is either possible for one or **all** sheets in one go.
+
+<img src = "./docs/choose_sheet.png" width = 450/>
+
+During the completion, depending on the selected **language** all attribute files of the ALLPLAN standard (Etc folder), the office standard (Std folder) and the currently open project will be considered.\
+Therefor is is necessary to open the intended project BEFOR running the PythonPart.\
+The process as such is executed with the button **Excel table -> complete!**. If it is not possible to complete an ID or UID, for example if there is a misspelling in the name, the entry **"not found"** is entered in the cell instead. Therefor it is recomended to check the Excel file after completion for such errors.
+
+### Create templates
+Similar to the completion workflow, the related Excel file and the desired **Table sheet** or **all** existing ones are also selected with the **Choose table** button.
+All created files will be stored in the same path as the Excel file but in a **separte sub-folder**. The field **template name** provides an option to enter a name for this folder. If left empty, it will be named **AttribSets**.
+
+Finaly the creation and storage is executed with the **XML templates -> create** button.\
+To use them in ALLPLAN than, either the complete folder or the single files have to be copied into the **office standard** (Std folder) and the sub-folder **XML -> AttribSets**.
+
+> ⚠️IMPORTANT\
+When opening or switching between projects, their is always an update and synchronistation of the assigned **AttributsetTemplate** from the Std folder. Therefor the only thing to do is to copy the new ones to the office standard as they will be taken over to the projects automatically.
