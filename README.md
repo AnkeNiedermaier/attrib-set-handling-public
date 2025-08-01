@@ -102,6 +102,6 @@ To use them in ALLPLAN than, either the complete folder or the single files have
 When opening or switching between projects, their is always an update and synchronistation of the assigned **AttributsetTemplate** from the Std folder. Therefor the only thing to do is to copy the new ones to the office standard as they will be taken over to the projects automatically.
 
 ## Video
-<a href="https://raw.githubusercontent.com/AnkeNiedermaier/layer-handling-public/main/docs/PP_AttribSetHandling.mp4" target="_blank">
-  <img src="https://raw.githubusercontent.com/AnkeNiedermaier/layer-handling-public/main/docs/AttribSetHandling_video.png" alt="Click to play video" width="600" height="300">
+<a href="https://raw.githubusercontent.com/AnkeNiedermaier/attrib-set-handling-public/main/docs/PP_AttribSetHandling.mp4" target="_blank">
+  <img src="https://raw.githubusercontent.com/AnkeNiedermaier/attrib-set-handling-public/main/docs/AttribSetHandling_video.png" alt="Click to play video" width="600" height="300">
 </a>
