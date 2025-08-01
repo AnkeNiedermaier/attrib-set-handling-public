@@ -30,11 +30,17 @@ The schema and structure of the Ecxel file is fixed and predefined and should no
 
 There is an individual sheet for each "assignment rule" which best should be named "**Attributset-Object; Attributset-Category**"
 
+<img src = "./docs/categorie_tab.png" width = 450/>
+
 Both parameters also have to be entered within the first empty row in the correspondend columns. Already existing UID values can be kept, but there is no need to create them manually in new sets, as they will be added automatically during the runtime of the PythonPart.
+
+<img src = "./docs/categorie_naming.png" width = 450/>
 
 In the following row the **name of the AttributGroup (CPSet)** in which the related attributes are combined should be entered in the **CPSetName** column. The cell for the UID can also stay empty and will be completed from the PythonPart.
 
 Finally all desired attributes are entered row by row in the column **AttribName**, where the first one has to be in the same row as the name of the **AttribGroup**. The only required information for an attribute is its **Name**, as the ID and UID can also be completed by using the corresponding PythonPart functionality.
+
+<img src = "./docs/group_attribs.png" width = 450/>
 
 Using these principles any amount of additional groups and attributes can be entered.
 
@@ -42,6 +48,8 @@ Using these principles any amount of additional groups and attributes can be ent
 It is not allowed to leave empty rows between the single groups as this will be interpreted by the PythonPart as end of the content/list!
 
 If the Attributset should include the assignement of an IfcEntity and a PredefinedType, a group with the name **IfcDefaultValues** has to be created. It contains the two attributes **IFC Entity** and **IFC PredefinedType**. In contrast to all other attributes it is also possible to enter a value here in the column **AttribValue**.
+
+<img src = "./docs/ifc_attribs.png" width = 450/>
 
 > ⚠️IMPORTANT\
 tips to work with the Excel tables:
@@ -81,6 +89,8 @@ During the completion, depending on the selected **language** all attribute file
 Therefor is is necessary to open the intended project BEFOR running the PythonPart.\
 The process as such is executed with the button **Excel table -> complete!**. If it is not possible to complete an ID or UID, for example if there is a misspelling in the name, the entry **"not found"** is entered in the cell instead. Therefor it is recomended to check the Excel file after completion for such errors.
 
+<img src = "./docs/attrib_missing.png" width = 450/>
+
 ### Create templates
 Similar to the completion workflow, the related Excel file and the desired **Table sheet** or **all** existing ones are also selected with the **Choose table** button.
 All created files will be stored in the same path as the Excel file but in a **separte sub-folder**. The field **template name** provides an option to enter a name for this folder. If left empty, it will be named **AttribSets**.
@@ -90,3 +100,5 @@ To use them in ALLPLAN than, either the complete folder or the single files have
 
 > ⚠️IMPORTANT\
 When opening or switching between projects, their is always an update and synchronistation of the assigned **AttributsetTemplate** from the Std folder. Therefor the only thing to do is to copy the new ones to the office standard as they will be taken over to the projects automatically.
+
+## Video
