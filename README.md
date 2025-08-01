@@ -30,11 +30,11 @@ The schema and structure of the Ecxel file is fixed and predefined and should no
 
 There is an individual sheet for each "assignment rule" which best should be named "**Attributset-Object; Attributset-Category**"
 
-<img src = "./docs/categorie_tab.png" width = 450/>
+<img src = "./docs/categorie_tab.png" width = 550/>
 
 Both parameters also have to be entered within the first empty row in the correspondend columns. Already existing UID values can be kept, but there is no need to create them manually in new sets, as they will be added automatically during the runtime of the PythonPart.
 
-<img src = "./docs/categorie_naming.png" width = 450/>
+<img src = "./docs/categorie_naming.png" width = 400/>
 
 In the following row the **name of the AttributGroup (CPSet)** in which the related attributes are combined should be entered in the **CPSetName** column. The cell for the UID can also stay empty and will be completed from the PythonPart.
 
@@ -69,11 +69,11 @@ which can be used independendly. Nevertheless, as a first step it is recommended
 ### Read templates
 To export existing templates the button **Folder AttribSets/AttribSet File** opens the Windows Explorer to select the path of the corresponding files. Depending on the setting of the **Complete folder** parameter, either the selected file or the complete folder is read off.
 
-<img src = "./docs/choose_templates.png" width = 450/>
+<img src = "./docs/choose_templates.png" width = 400/>
 
 Depending on the choice of **Excel table** either a **new file** will be created or an **existing one** completed with new templates during the export. The button **Select table** therefor either serves to enter a file name and path or select an already existing file.
 
-<img src = "./docs/choose_Excel.png" width = 450/>
+<img src = "./docs/choose_Excel.png" width = 400/>
 
 The export as such is executed with the button **XML templates -> read off**.
 
@@ -83,7 +83,7 @@ Afterwards the created or completed Excel file can be copied and edited in follo
 ### Complete templates
 In preparation for the (re)creation of Attributsets the Excel file as the basis has to be completed with the necessary information about the UIDs and IDs of groups and attributes. To do so, the file is selected with the button **Choose table**. Once selected, all containing sheets will be displayed in the **Table sheet** Pull-down. The completion is either possible for one or **all** sheets in one go.
 
-<img src = "./docs/choose_sheet.png" width = 450/>
+<img src = "./docs/choose_sheet.png" width = 400/>
 
 During the completion, depending on the selected **language** all attribute files of the ALLPLAN standard (Etc folder), the office standard (Std folder) and the currently open project will be considered.\
 Therefor is is necessary to open the intended project BEFOR running the PythonPart.\
@@ -102,3 +102,6 @@ To use them in ALLPLAN than, either the complete folder or the single files have
 When opening or switching between projects, their is always an update and synchronistation of the assigned **AttributsetTemplate** from the Std folder. Therefor the only thing to do is to copy the new ones to the office standard as they will be taken over to the projects automatically.
 
 ## Video
+<a href="https://raw.githubusercontent.com/AnkeNiedermaier/layer-handling-public/main/docs/PP_AttribSetHandling.mp4" target="_blank">
+  <img src="https://raw.githubusercontent.com/AnkeNiedermaier/layer-handling-public/main/docs/AttribSetHandling_video.png" alt="Click to play video" width="600" height="300">
+</a>
