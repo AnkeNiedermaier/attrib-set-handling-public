@@ -60,7 +60,7 @@ tips to work with the Excel tables:
 
 ## Workflow
 The PythonPart is executed directly in ALLPLAN from the **Library palette**. In general, all PythonParts can be stated either with a **double-click** on the entry or per **Drag and Drop**. This shows the corresponding Properties palette and executes the skript.\
-he pallett consists of the two main parts
+The pallett consists of the two main parts
 - **Export templates** for the export to Excel
 - **Create/extend templates** for completion and creation of the ALLPLAN templates
 
